@@ -1,0 +1,90 @@
+% for example, see https://www.sharelatex.com/templates/cover-letters/moderncv-banking
+\documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[letterpaper,top=1.2in,bottom=1.2in,left=1.2in,right=1.2in]{geometry}
+
+% to include a signature
+\makeatletter
+\renewcommand*{\makeletterclosing}{
+  \@closing\\[2em]%
+  {\includegraphics[width=2.5cm]{../../pics/marc-handwritten_signature-transparent}
+  \par
+  \bfseries \@firstname~\@lastname}%
+  \ifthenelse{\isundefined{\@enclosure}}{}{%
+    \\%
+    \vfill%
+    {\color{color2}\itshape\enclname: \@enclosure}}}
+\makeatother
+%
+% ==================== My Data   =======================
+\input{MarcLijour-personal-data.tex}
+%
+% ==================== About Me =======================
+%\setlength{\parskip}{5em}
+\begin{document}
+\maketitle
+\recomputeletterlengths
+\begin{flushright}
+	Toronto, \today
+	\vspace{-1em}
+\end{flushright}
+\section{About me}
+Marc is an IT consultant specializing in digital transformation and emerging technologies such as Blockchain. 
+He founded Metamesh Consulting with a dozen highly skilled ex-colleagues from ConsenSys and top industry experts.
+Metamesh Consulting focuses on improving the competitive advantage of medium to large businesses, leveraging the best tools and methodologies such as Design Thinking, Agile, and DevOps.
+
+Marc has a Bachelor degree in Mathematics from the University of Paris, as well as a Bachelor degree in Computer Science  and an MBA in Technology Management and Innovation from Ryerson University.
+He has completed several management courses including an IT Executive Leadership certificate taught by CIOs for CIOs from Leaders~Beyond, and coursework towards the Superintendent qualification.
+
+Marc seats on the board of several not-for-profit associations, including ColliderX, an Innovation Hub for Blockchain and emerging technology he co-founded in 2017, raising \$50 million dollars in pledges to create a Canadian Blockchain supercluster rallying the industry and the community dedicated to Blockchain. 
+Marc is an officer of the board of the Information and Communications Technology Council (ICTC), and a board member of the Toronto French Business Network, and TechConnex.
+
+He advised start-ups for the last ten years, most significantly Prepr, where he assumed the role of CEO.
+Prepr offers a centre of innovation in a box, making it easy as PIE$^\copyright$ to go from ideation to commercialization.
+
+\section{Experience}
+Marc has lead Industry Transformation at Cisco focusing on the Education sector, helping government, university presidents, and secondary school superintendents design and implement their vision for a 21$^{st}$ education system.
+Then, he worked two years closer to engineering teams at Savoir-faire Linux, a leader in Open Source Software such as Linux, Java and Hadoop. %and technology from Red~Hat, IBM, and the Linux ecosystem.
+Top clients from the Financial Services and Aerospace industries included Desjardins, Banque Nationale, Bombardier, and Airbus.
+
+Committed to developing talents, Marc designed and delivered an original training program in partnership with the Information and Communications Technology Council, the Federal Government, and the Provincial Government, to train 100 underemployed Youth across Ontario to become change leaders in small and medium-size businesses.
+He also built and strengthened strategic partnerships with Microsoft, IBM, and Red~Hat.
+
+In 2018, Marc joined ConsenSys to build a consulting practice in Canada.
+He developed a strategy focusing on the enterprise market, to help identify and implement relevant applications of blockchain technology to secure a disruptive competitive advantage.
+Regrettably, he was not able to hire people fast enough in Toronto to handle all the demand emerging in the Canadian market.
+
+Prior to his consulting career, Marc worked 15+ years in the public sector.
+He held senior roles as a subject matter expert in the Government of Ontario, where he advised on Intellectual Property policy, cloud procurement practice, IT and other policies in education.
+Managing key programs, he was instrumental in launching e-learning to serve 2 million students across the province.
+
+Recently, he designed the first postgraduate certificate for Blockchain Developers in Canada, launched by George Brown College in September 2018.
+He is happy to teach a few courses at the College, such as Software Development Methodologies and Blockchain Applications Design Patterns.
+
+\section{Skills}
+Marc has experience leading industry transformation projects, especially in the public sector.
+That includes contributing to the project in most roles, driving the creation of consortia, partnerships, and co-ventures.
+He has a wide understanding of emerging technologies, when to deploy them, and who can successfully execute these projects.
+
+Marc has in-depth experience in education, from designing curricula and policy to running programs.
+Skills include assessment, policy lifecycle from consultation to retirement, board level presentations and decision-making.
+
+Marc nurtures his technical skills, doing DevOps, deploying software on virtual private clouds, setting up ERPs for small businesses and not-for-profit associations, leveraging tools such as Ansible and Jenkins, and developing decentralized applications leveraging Ethereum Blockchain technology.
+Marc is also versed in the Java Enterprise stack, and more recently in Python.
+He is a technical reviewer for Blockchain programming books at Packt Publishing.
+
+Last but not least, Marc is an insatiable learner who likes to share his knowledge and skills with his friends and colleagues.
+He likes to help people get from point A to point B.
+
+
+\end{document}
+
